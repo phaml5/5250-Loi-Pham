@@ -62,7 +62,7 @@ namespace Mine.Services
         /// </summary>
         /// <param name="item">The record to update</param>
         /// <returns>True if updated</returns>
-        public Task<bool> UpdateAsync(ItemModel item)
+        public async Task<bool> UpdateAsync(ItemModel item)
         {
             if (item == null)
             {
