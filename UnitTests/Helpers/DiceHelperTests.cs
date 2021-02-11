@@ -23,12 +23,26 @@ namespace UnitTests.Helpers
         }
 
         [Test]
-        public void RollDice_Invalid_Roll_Zero_Dice_10_Should_Return_Zero()
+        public void RollDice_Invalid_Roll_0_Dice_10_Should_Return_Zero()
         {
             // Arrange
 
             // Act
             var result = DiceHelper.RollDice(0, 10);
+
+            // Reset
+
+            // Assert 
+            Assert.AreEqual(0, result);
+        }
+
+        [Test]
+        public void RollDice_Invalid_Roll_1_Dice_0_Should_Return_Zero()
+        {
+            // Arrange
+
+            // Act
+            var result = DiceHelper.RollDice(1, 0);
 
             // Reset
 
